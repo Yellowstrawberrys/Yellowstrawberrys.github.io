@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR&display=swap');
+:root {
+    color: white;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+body {
+    background-color: #0c0d17;
+    margin: 0;
+}
+
+#header {
+    padding: 10px;
+}
+
+#title {
+    color: #ffffff;
+    text-shadow: 0 0 50px #f4f600;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    width: fit-content;
+}
+
+#main {
+    box-shadow: 0 0 90px 20px darkblue, 0 0 200px 10px black, 0 0 30px 4px rgb(242, 255, 0), 0 0 50px 10px white;
+    padding: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#sen1, #sen2 {
+    margin: 0;
+}  
+
+#sen1 {
+    color: #dadada;
+    font-size: 30px;
+}
+
+#sen2 {
+    align-self: center;
+    font-style: italic;
+    text-decoration-line: underline;
+    font-size: 40px;
+}
+
+#learnMore {
+    align-self: center;
+    font-size: 12px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    color: white;
+    padding: 5px 8px;
+    background-color: transparent;
+    border: 1.5px solid white;
+    border-radius: 20px;
+    transition: background-color 1s;
+}
+
+#learnMore:hover {
+    background-color: rgb(0, 0, 135);
+}
+
+#learnMore:active {
+    border: 1.5px solid white;
+    border-radius: 20px;
+}
+
+#tlist {
+    vertical-align: center;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 930px) {
+    #main {
+        box-shadow: 0 0 80px 20px darkblue, 0 0 190px 10px black, 0 0 20px 4px rgb(242, 255, 0), 0 0 40px 10px white;
+        padding: 120px;
+    }
+    #learnMore {
+        font-size: 9px;
+    }
+    #sen1 {
+        font-size: 20px;
+    }
+    #sen2 {
+        font-size: 30px;
+    }
+    #tlist {
+        width: 70%;
+    }
+    #tlist > h {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    #main {
+        box-shadow: 0 0 80px 20px darkblue, 0 0 190px 10px black, 0 0 20px 4px rgb(242, 255, 0), 0 0 40px 10px white;
+        padding: 23px;
+    }
+    #learnMore {
+        font-size: 6px;
+    }
+    #sen1 {
+        font-size: 15px;
+    }
+    #sen2 {
+        font-size: 25px;
+    }
+    #tlist {
+        width: 70%;
+    }
+    #tlist > h {
+        font-size: 15px;
+    }
+}
